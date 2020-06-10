@@ -12,7 +12,7 @@ const Exercise = props => (
     <td>{props.exercise.nim}</td>
     <td>{props.exercise.name}</td>
     <td>{props.exercise.date.substring(0,10)}</td>
-    <td> <img src={require('../image/'+props.exercise.photo)} alt="Photo" width="150px" height="130px"/></td>
+    <td> <img src={require('../image/'+props.exercise.photo)} alt="1" width="150px" height="130px"/></td>
     <td>
       <Link to={"/edit/"+props.exercise._id}>edit</Link> | <a href="#" onClick={() => { props.deleteExercise(props.exercise._id) }}>delete</a>
     </td>
